@@ -32,7 +32,7 @@ public class Board
                 for(int j=1;j<=18 ;j++)
                     screen[i][j]=' ';
                 
-                for(int k=i-1;k>=2;k--)
+                for(int k=i;k>=2;k--)
                 {
                     count[k+1]=0;
                     for(int j=1;j<19;j++){
@@ -44,10 +44,10 @@ public class Board
                         }
                     }
                 }
-               return 1;
+                return 1;
                 }
             }
-       return 0;
+        return 0;
         }
     
     
