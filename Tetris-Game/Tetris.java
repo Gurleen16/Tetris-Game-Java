@@ -26,14 +26,22 @@ class Tetris
         UndoShape us=new UndoShape();
         
         char [][]mapped =new char[][]{{'l','r'},{'r','l'},{'d','u'},{'c','a'},{'a','c'},{'s','p'}};
-        
+        int isgameover=0;
+		
         while(true){
-        
-            if(fix>100)
-                break;
+        isgameover=0;
+           
         Shapes s=new Shapes();
         int coords[][]=s.generate_Shape();
-	
+		for(int i=0;i<4;i++)
+		{
+			if(b.screen[coords[i][0]][coords[i][1]]!=' '){
+				isgameover=1;
+				break;
+			}
+		}
+			if(isgameover==1)
+				break;
         b.setBoard(coords);
         clearscreen();
         b.display_board();
