@@ -46,27 +46,3 @@ public class Undo implements stack1
     }
 }
 
-//public class Undo implements stack
-//{   
-//    public char operation[]=new char[50];
-//    public int top=-1;
-//    
-//    public void push(char val){
-//    if(top!=49){
-//    top++;
-//    operation[top]=val;
-//    }
-//    }
-//    
-//    public void pop(){
-//    if(top!=-1)
-//        top--;
-//    }
-//    
-//    public char peek(){
-//    if(top!=-1)
-//    return operation[top];
-//    
-//    return 'm';
-//    }
-//}
