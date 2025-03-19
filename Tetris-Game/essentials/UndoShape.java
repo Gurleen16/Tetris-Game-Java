@@ -14,7 +14,7 @@ class Link{
     public int y;
     public Link next;
     public Link(int d,int r,int x1,int y1){
-        shape=d;
+        shape=r;
         rotation=r;
         x=x1;
         y=y1;
