@@ -8,6 +8,7 @@ class Tetris
     {
         try{
             new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
+		new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
         }
         catch(Exception e)
         {
@@ -32,6 +33,7 @@ class Tetris
         isgameover=0;
            
         Shapes s=new Shapes();
+		
         int coords[][]=s.generate_Shape();
 		for(int i=0;i<4;i++)
 		{
