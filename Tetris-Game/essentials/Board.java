@@ -20,6 +20,18 @@ public class Board
             }
         }
         for(int i=0;i<20;i++)
+        {
+            for(int j=0;j<20;j++)
+            {
+                if(j==19 || j==0)
+                    screen[i][j]='|';
+              else  if(i==0 || i==19)
+                    screen[i][j]='-';
+                else
+                    screen[i][j]=' ';
+            }
+        }
+        for(int i=0;i<20;i++)
             count[i]=0;
     }
     
